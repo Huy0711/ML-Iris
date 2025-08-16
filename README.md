@@ -13,13 +13,12 @@ Mô hình **K-Nearest Neighbors (KNN)** được huấn luyện trên tập dữ
 
 ## 🛠️ Công cụ & Công nghệ sử dụng
 
-- **Ngôn ngữ lập trình**: Python 3.10+  
+- **Ngôn ngữ lập trình**: Python 
 - **Framework Web**: [Flask](https://flask.palletsprojects.com/) — xây dựng backend và routes web  
 - **Machine Learning**: [scikit-learn](https://scikit-learn.org/) — huấn luyện & dự đoán bằng KNN  
 - **Xử lý dữ liệu**: [NumPy](https://numpy.org/) — thao tác mảng số học nhanh  
 - **Frontend**: HTML5 + CSS3 (kết hợp [Jinja2](https://jinja.palletsprojects.com/) template engine của Flask)  
-- **Quản lý môi trường**: `venv`  
-- **Quản lý phiên bản**: [Git](https://git-scm.com/) + [GitHub](https://github.com/)  
+
 
 ---
 
