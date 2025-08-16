@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kết quả dự đoán — Iris</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="card">
+    <h1>Kết quả dự đoán</h1>
+
+    <div class="result-box">
+      <p><strong>Sepal Length:</strong> {{ sepal_length }} cm</p>
+      <p><strong>Sepal Width:</strong> {{ sepal_width }} cm</p>
+      <p><strong>Petal Length:</strong> {{ petal_length }} cm</p>
+      <p><strong>Petal Width:</strong> {{ petal_width }} cm</p>
+
+      <hr>
+
+      <p class="prediction">Dự đoán loài: <span>{{ prediction }}</span></p>
+    </div>
+
+    <div class="actions">
+      <a href="{{ url_for('index') }}" class="btn">Quay lại</a>
+    </div>
+  </main>
+</body>
+</html>

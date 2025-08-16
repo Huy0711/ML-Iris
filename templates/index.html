@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Iris K-NN — Dự đoán loài hoa</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="card">
+    <h1>Iris K-NN Predictor</h1>
+    <p class="muted">Mô hình K-NN (k = {{ k }}) — Độ chính xác kiểm thử: {{ '%.2f'|format(accuracy*100) }}%</p>
+
+    <form action="{{ url_for('predict') }}" method="post" class="form">
+      <label>
+        Sepal Length (cm)
+        <input name="sepal_length" type="number" step="0" placeholder="Ví dụ: 1" required>
+      </label>
+
+      <label>
+        Sepal Width (cm)
+        <input name="sepal_width" type="number" step="0" placeholder="Ví dụ: 5" required>
+      </label>
+
+      <label>
+        Petal Length (cm)
+        <input name="petal_length" type="number" step="0" placeholder="Ví dụ: 4" required>
+      </label>
+
+      <label>
+        Petal Width (cm)
+        <input name="petal_width" type="number" step="0" placeholder="Ví dụ: 2" required>
+      </label>
+
+      <div class="actions">
+        <button type="submit" class="btn">Dự đoán loài</button>
+        <button type="reset" class="btn secondary">Xoá</button>
+      </div>
+    </form>
+
+    <footer class="foot">Nhập 4 thông số rồi nhấn "Dự đoán loài".</footer>
+  </main>
+</body>
+</html>
+s
